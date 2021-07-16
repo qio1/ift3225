@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Qiao Wang 20095140 -->
+<!ELEMENT bibliotheque (auteurs, livres ,adresse) >
+<!ELEMENT auteurs (auteur+) >
+<!ELEMENT auteur ((nom, prenom) , adresse, commentaire? , email) >
+<!ATTLIST auteur ident ID #REQUIRED >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT commentaire (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT adresse (numero, rue, ville, cp) >
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+
+<!ELEMENT livres (livre+) >
+<!ELEMENT livre (titre, annee, prix, couverture?, commentaire?) >
+<!ATTLIST livre langue CDATA #REQUIRED >
+<!ATTLIST livre auteurs IDREFS #REQUIRED >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT annee (#PCDATA) >
+<!ELEMENT prix (#PCDATA) >
+<!ATTLIST prix devise (CAD | USD | EURO ) #IMPLIED >
+<!ELEMENT couverture EMPTY >
+<!ATTLIST couverture url CDATA #REQUIRED >

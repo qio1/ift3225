@@ -1,0 +1,57 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+#Qiao Wang 20095140
+start = bibliotheque
+
+bibliotheque = element bibliotheque {auteur+, livre+ ,adresse}
+
+auteur = element auteur {
+         attribute ident {xsd:ID},
+         (element nom{text} ,element prenom{text}+) ,
+         adresse,
+         commentaire?, 
+         email
+         }
+         
+nom = element nom {text}
+prenom = element prenom {text}
+
+adresse = element adresse { 
+          numero,
+          rue,
+          ville,
+          cp}
+numero = element numero {text}
+rue = element rue {text}
+ville = element ville {text}
+cp = element cp {text}
+
+email = element email {
+        xsd:string {pattern = "[^@]+@[^\.]+\..+"}
+        }
+
+livre = element livre {
+        attribute langue {xsd:language},
+        attribute auteurs {xsd:IDREFS},
+        titre,
+        annee,
+        prix,
+        couverture,
+        commentaire?
+        }
+        
+titre = element titre {xsd:string{maxLength = "60"}}
+annee = element annee {xsd:gYear}
+prix = element prix {
+       attribute devise {( "CAD" | "USD" | "EURO" )?},
+       xsd:decimal {
+       minInclusive="0"
+       maxInclusive="100"
+       fractionDigits ="2"
+       }
+       }
+       
+couverture = element couverture {
+             attribute url {xsd:anyURI},
+             empty
+             }
+commentaire = element commentaire {text}

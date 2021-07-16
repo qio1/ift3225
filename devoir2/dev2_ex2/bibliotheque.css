@@ -1,0 +1,42 @@
+body {
+			width: 85%;
+			margin: auto;
+			padding: 20px 0 50px 0;
+			background-color: white;
+}
+table{
+    border-collapse:collapse;
+    width:100%;
+    
+}
+td,th{
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:8px;
+}
+td{
+    height:200px;
+    padding: 12px;
+    text-align:center;
+    vertical-align: middle;
+}
+tr td:nth-child(2) { 
+    font-size:large;
+    font-weight:600;
+}
+tr td:last-child { 
+    max-width:200px;
+    text-align:left;
+}
+img{
+    max-width:300px;
+    max-height:200px;
+    text-align:center;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+}
+li{
+    padding-top:5px;
+}

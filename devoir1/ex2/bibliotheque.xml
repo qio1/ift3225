@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  bibliotheque SYSTEM "bibliotheque.dtd"> 
+<!-- Qiao Wang 20095140 -->
+<bibliotheque>
+    <auteurs>  
+        <auteur ident="auteur1">
+            <nom>Mishima</nom>
+            <prenom>Yukio</prenom>
+            <adresse>
+                <numero>5-1</numero>
+                <rue>Ichigaya</rue>
+                <ville>Tokyo</ville>
+                <cp>162-8801</cp>
+            </adresse>
+            <email>mishimayukio@gmail.com</email>  
+        </auteur>
+        <auteur ident="auteur2">
+            <nom>Nothomb</nom>
+            <prenom>Amélie</prenom>
+            <adresse>
+                <numero>50</numero>
+                <rue>Franklin Roosevelt</rue>
+                <ville>Bruxelles</ville>
+                <cp>1050</cp>
+            </adresse>
+            <commentaire>
+                Fille de diplomate belge, Amélie Nothomb est née le 13 août 1967 à Kobé, au Japon.                
+                Elle publie en 1992 son premier roman Hygiène de l’assassin, unanimement salué par la critique et le public.                
+                En vingt ans de carrière, Amélie Nothomb a notamment été récompensée par le Grand Prix du Roman
+                de l’Académie française 1999, le Grand Prix Jean Giono pour l’ensemble de son œuvre
+                et le Prix de Flore 2007.
+            </commentaire>
+            <email>amelie-nothomb@outlook.com</email>  
+        </auteur>
+        <auteur ident="auteur3">
+            <nom>Gary</nom>
+            <prenom>Romain</prenom>
+            <adresse>
+                <numero>12</numero>
+                <rue>Place di Panthéon</rue>
+                <ville>Paris</ville>
+                <cp>75231</cp>
+            </adresse>
+            <commentaire>
+                Important écrivain français de la seconde moitié du xxe siècle, 
+                il est également connu pour la mystification littéraire qui le conduisit, dans les années 1970,
+                à signer plusieurs romans sous le nom d'emprunt d'Émile Ajar, en les faisant passer pour l'œuvre d'un tiers.
+                Il est ainsi le seul romancier à avoir reçu le prix Goncourt à deux reprises,
+                le second prix étant attribué à un roman écrit sous ce pseudonyme.
+            </commentaire>
+            <email>emile_ajar@live.com</email>  
+        </auteur>
+        <auteur ident="auteur4">
+            <nom>Brassard</nom>
+            <prenom>Gilles</prenom>
+            <adresse>
+                <numero>2920</numero>
+                <rue>Ch de la Tour</rue>
+                <ville>Montreal</ville>
+                <cp>H3T 1N8</cp>
+            </adresse>
+            <email>brassard@iro.umontreal.ca</email>  
+        </auteur>  
+     </auteurs> 
+    <livres> 
+        <livre langue="fr" auteurs="auteur2">
+            <titre>Hygiène de l'assassin</titre>
+            <annee>1992</annee>
+            <prix devise="CAD"> 10.95 </prix>
+            <couverture url="https://images-na.ssl-images-amazon.com/images/I/81LQ98hvF+L.jpg"/>
+            <commentaire>Prétextat Tach, prix Nobel de littérature, n'a plus que deux mois à vivre.
+                Des journalistes du monde entier sollicitent des interviews de l'écrivain que sa misanthropie tient reclus depuis des années.
+                Quatre seulement vont le rencontrer, dont il se jouera selon une dialectique où la mauvaise foi et la logique se télescopent. La cinquième lui tiendra tète, il se prendra au jeu.
+                Si ce roman est presque entièrement dialogué, c'est qu'aucune forme ne s'apparente autant à la torture.
+                Les échanges, de simples interviews, virent peu à peu à l'interrogatoire, à un duel sans merci où se dessine alors un homme différent, en proie aux secrets les plus sombres.
+                Dans ce premier roman d'une extraordinaire intensité, Amélie Nothomb manie la cruauté, le cynisme et l'ambiguïté avec un talent accompli.
+            </commentaire>
+        </livre>
+        <livre langue="ja" auteurs="auteur1">
+            <titre>La Mer de la fertilité, tome 1 : Neige de printempst</titre>
+            <annee>1989</annee>
+            <prix devise="EURO"> 9.70 </prix>
+            <couverture url="https://images-na.ssl-images-amazon.com/images/I/81TwQ5n4chL.jpg"/>
+           
+        </livre>
+        <livre langue="ja" auteurs="auteur1">
+            <titre>Le Pavillon d'or</titre>
+            <annee>1975</annee>
+            <prix> 9.5 </prix>
+            <couverture url="https://images-na.ssl-images-amazon.com/images/I/51Cdhr4FolL._SX302_BO1,204,203,200_.jpg"/> 
+        </livre>
+        <livre langue="fr" auteurs="auteur3">
+            <titre>La Vie devant soi</titre>
+            <annee>1975</annee>
+            <prix devise="USD"> 15.27 </prix>
+            <commentaire>Signé Ajar, ce roman reçut le prix Goncourt en 1975.
+                Histoire d'amour d'un petit garçon arabe pour une très vieille femme juive:
+                Momo se débat contre les six étages que Madame Rosa ne veut plus monter et contre la vie parce que " ça ne pardonne pas " et parce qu'il n'est " pas nécessaire d'avoir des raisons pour avoir peur ".
+                Le petit garçon l'aidera à se cacher dans son " trou juif ",
+                elle n'ira pas mourir à l'hôpital et pourra ainsi bénéficier du droit sacré " des peuples à disposer d'eux-mêmes " qui n'est pas respecté par l'Ordre des médecins.
+                Il lui tiendra compagnie jusqu'à ce qu'elle meure et même au-delà de la mort.</commentaire>
+        </livre>
+        <livre langue="en" auteurs="auteur4">
+            <titre>Fundamentals of Algorithmics</titre>
+            <annee>1966</annee>
+            <prix devise="CAD"> 32.89 </prix>
+        </livre>
+    </livres> 
+    <adresse>
+        <numero>475</numero>
+        <rue>de Maisonneuve</rue>
+        <ville>Montreal</ville>
+        <cp>H2L 5C4</cp>
+    </adresse>
+</bibliotheque>

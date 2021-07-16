@@ -1,0 +1,47 @@
+/* css inspiré de H15_IFT3225_intra */
+container{
+    width:80%;
+    margin:auto;
+}
+table{
+    border-collapse:collapse;
+    margin:5px;
+    color:black;
+    margin: 10px auto;
+}
+tr:nth-child(odd){
+    border-top:2px solid #ddd;
+}
+tr:nth-child(even){
+    border-bottom:2px solid #ddd;
+}
+td{
+    border:1px solid #ddd;
+    height:35px;
+    width:35px;
+    text-align:center;
+}
+td:nth-child(odd){
+    border-left:2px solid #ddd;
+}
+td:nth-child(even){
+    border-right:2px solid #ddd;
+}
+td > input[type='text']{
+    width:100%;
+    border:none;
+    text-align:center;
+}
+td > input.readonly{
+    font-weight:bold;
+    color:#008080;
+    font-style:italic;
+}
+td > input.current{
+    color:white;
+    background-color:teal;
+}
+td > input.error{
+    color:black;
+    background-color:gold;
+}

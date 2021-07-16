@@ -1,0 +1,110 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Messages Institutionnels</title>
+      <link href="../../wwwroot/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../wwwroot/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="../../wwwroot/css/main.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">XSLT</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active"><a class="nav-link" href="#">Un <span class="sr-only">(current)</span></a></li>
+               <li class="nav-item"><a class="nav-link" href="#">élément</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">boostrap</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">avec XML et XSLT</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <h4>- Apply Template - Tout les messages et institutions.</h4>
+         <h6>
+            Les données des messages proviennes des balises xml sans changements. Par contre,
+            le comportement
+            des données "institution" sont changées par un template.
+            
+         </h6>
+         
+         Bonjour
+         Bye très court texte sans but.
+         
+         
+         Bon matin
+         Bonne soirée et à la prochaine.
+         
+         
+         Au revoir
+         Salut ceci est un long texte.
+         
+         <br>
+         Title: <span style="color:#ff0000">
+            Université de Montréal
+            https://www.umontreal.ca
+            </span><br>
+         
+         <h4>- Call Template</h4>
+         <h6>
+            Appeler un template par son nom. Il peut contenir du HTMl et XSLT comme le template
+            présent.
+            
+         </h6>
+         <p>Je viens d'un template.</p>
+         <p>Je viens d'un template.</p>
+         <h4>- For each</h4>
+         <h6>
+            Boucle sur les éléments d'une balise spécifié. (//nom_balise).
+            Il est possible de mettre du HTML et d'autres éléments XSLT.
+            
+         </h6>
+         <ul>
+            <li>Bonjour</li>
+            <li>Bon matin</li>
+            <li>Au revoir</li>
+         </ul>
+         <h4>- If</h4>
+         <h6>
+            Avec un for each, permet de faire une opération si la condition est respectée.
+            
+         </h6>
+         <ul>
+            <li>Bye très court texte sans but.</li>
+         </ul>
+         <h4>- Choose inside For each</h4>
+         <h6>
+            Peut être vu comme le fameux if-else des languages de programmation traditionnels.
+            
+         </h6>
+         <p>Dire "Bonjour" lorsqu'on quitte n'est pas normal...</p>
+         <p>Dire "Bon matin" lorsqu'on quitte n'est pas normal...</p>Au revoir
+         <h4>- Sort with For each</h4>
+         <h6>
+            Il est possible de trier la liste d'éléments que l'on obtient.
+            Par défaut, celle-ci est par ordre alphabétique. Voici quelques paramètres supplémentaires
+            :
+            
+         </h6>
+         <h6>
+            data-type="number" - order="descending" - select="substring(@elementXYZ,0,5)" - etc.
+            
+         </h6>
+         <ul>
+            <li>Au revoir<br>Salut ceci est un long texte.
+            </li>
+            <li>Bon matin<br>Bonne soirée et à la prochaine.
+            </li>
+            <li>Bonjour<br>Bye très court texte sans but.
+            </li>
+         </ul>
+         <h4>- Attributes</h4>
+         <h6>
+            Nous pouvons mettre des éléments dans des balises en les traitant comme des paramètres.
+            
+            
+         </h6><a href="https://www.umontreal.ca">Université de Montréal</a><h4>- Variable</h4>
+         <h6>Sans valeur d'un fichier XML, erreur NaN</h6>NaN
+      </div><script src="../../wwwroot/lib/jquery/jquery.min.js"></script><script src="../../wwwroot/lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="../../wwwroot/lib/jquery-easing/jquery.easing.min.js"></script><script src="../../wwwroot/js/main.js"></script></body>
+</html>

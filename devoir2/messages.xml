@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="messages.xsl"?>
+
+<messages>
+    <message>
+        <header>Bonjour</header>
+        <text>Bye très court texte sans but.</text>
+    </message>
+    <message>
+        <header>Bon matin</header>
+        <text>Bonne soirée et à la prochaine.</text>
+    </message>
+    <message>
+        <header>Au revoir</header>
+        <text>Salut ceci est un long texte.</text>
+    </message>
+    <institution>
+        <name>Université de Montréal</name>
+        <url>https://www.umontreal.ca</url>
+    </institution>
+</messages>

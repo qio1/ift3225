@@ -1,0 +1,47 @@
+/*Inspiré et modifié de https://www.techighness.com/post/develop-two-player-chess-game-with-react-js/
+*/
+container{
+  font: 14px Arial, Helvetica, sans-serif;
+   width:80%;
+   margin:auto;
+  
+}
+h2
+ol, ul {
+  padding-left: 30px;
+}
+
+.square {
+  border: 0;
+  padding: 0;
+  float: left;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  margin: -2px -2px 0 0;
+}
+
+.dark-square{
+	background-color:tan;
+}
+
+.light-square{
+    background-color:wheat;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info {
+  height:50px;
+}
+.boutons{
+	padding:5px;
+	height:32px;
+}

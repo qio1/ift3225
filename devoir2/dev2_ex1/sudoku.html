@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Par Qiao Wang 20095140-->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="sudoku.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="modele.js"></script>
+        <title>Sudoku</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 p-2">
+                    <h3>Construction d'un sudoku N * N</h3>
+                    Temps écoulé: <span id="counter" class="pr-2">0</span>
+                    Erreurs: <span id="erreur" class="pr-2">0</span>
+                    <table id="grille"></table>
+                    Choisissez la grandeur du sudoku:
+                    <form id="myFrom" class="form-inlin-block">
+                        <div class="form-check form-check-inline p-2">
+                            <label class="form-check-label"><input type="radio" name="optradio" value="4" checked="checked" /> 4</label>
+                        </div>
+                        <div class="form-check form-check-inline p-2">
+                            <label class="form-check-label"><input type="radio" name="optradio" value="6"/> 6</label>
+                        </div>
+                        <div class="form-check form-check-inline p-2">
+                            <label class="form-check-label"><input type="radio" name="optradio" value="9"/> 9</label>
+                        </div>
+                        <div class="d-block p-2">
+                            <button id="debut_btn" type="button" class="btn btn-info">Commencer</button>
+                            <button id="fin_btn" type="button" class="btn btn-warning">Terminé</button>
+                        </div>
+                    </form>
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
